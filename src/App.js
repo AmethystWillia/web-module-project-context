@@ -29,11 +29,11 @@ function App() {
 				<Route exact path="/">
 					<Products />
 				</Route>
+			</ProductContext.Provider>
 
 				<Route path="/cart">
 					<ShoppingCart cart={cart} />
 				</Route>
-			</ProductContext.Provider>
 		</div>
 	);
 }
