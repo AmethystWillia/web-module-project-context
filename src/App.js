@@ -16,9 +16,10 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
-		setCart({
-			cart: [...cart, item]
-		});
+		setCart([
+			...cart,
+			item
+		]);
 	};
 
 	return (
